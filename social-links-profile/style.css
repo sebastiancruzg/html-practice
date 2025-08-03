@@ -1,0 +1,208 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+@font-face {
+  font-display: swap;
+  font-family: "Inter", sans-serif;
+  src: url(assets/fonts/Inter-VariableFont_slnt\wght.ttf) format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+h1 {
+  font-size: 1.5rem;
+  color: var(--White);
+  font-weight: 600;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey-700: hsl(0, 0%, 20%);
+  --Grey-800: hsl(0, 0%, 12%);
+  --Grey-900: hsl(0, 0%, 8%);
+}
+
+body {
+  background-color: var(--Grey-900);
+  font-family: "Inter", sans-serif;
+}
+
+.flex-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+main {
+  min-height: 100vh;
+}
+
+.container {
+  width: 300px;
+  padding: 30px;
+  background-color: var(--Grey-800);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.profile {
+  gap: 1.5rem;
+}
+
+.profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.profile p {
+  color: var(--Green);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.profile-text {
+  gap: 0.3rem;
+}
+
+.navigation {
+  gap: 1rem;
+}
+
+.navigation {
+  width: 100%;
+  align-items: stretch;
+}
+.navigation li {
+  margin-bottom: 10px;
+}
+.navigation p {
+  color: var(--White);
+  font-size: 0.65rem;
+}
+
+.navigation a {
+  background-color: var(--Grey-700);
+  display: block;
+  padding: 12px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 0.65rem;
+  color: var(--White);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.navigation a:hover {
+  background-color: var(--Green);
+  color: var(--Grey-700);
+}
